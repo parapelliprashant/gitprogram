@@ -8,7 +8,6 @@ public class User {
     private String password;
     private Double Salary;
     private String role;
-
     public Integer getId() {
         return id;
     }
