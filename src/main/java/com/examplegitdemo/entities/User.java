@@ -7,7 +7,6 @@ public class User {
     private String email;
     private String password;
     private Double Salary;
-    private String role;
 
     public Integer getId() {
         return id;
@@ -49,11 +48,14 @@ public class User {
         Salary = salary;
     }
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", Salary=" + Salary +
+                '}';
     }
 }
